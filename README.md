@@ -1,2 +1,1 @@
-# Pixel-Art-Make-Project
-A simple pixel art maker
+ A simple Pixel Art Maker Project
