@@ -1,4 +1,3 @@
-/// Wrapped it into an IIFE to protect namespacing.
 (function(document){
     'use strict';
 
@@ -11,7 +10,7 @@
     };
 
     /**
-     * @description Initialize by binding the event handlers.
+     *  event handlers binding.
      *
      * @function
      */
@@ -23,17 +22,6 @@
         // Set the grid's color listener.
         elements.gridCanvas.addEventListener('click', setGridColor);
     };
-
-    /*=================
-     * Event Handlers
-     *=================/
-    /**
-     * @description Make Grid Handler.
-     *
-     * @function
-     *
-     * @param {object} Event object.
-     */
     function makeGrid(event) {
         /// Prevent the form from submitting to a non-existent back-end,
         /// which would cause a web page refresh.
@@ -59,7 +47,7 @@
 
 
     /**
-     * @description Set the selected grid's background color.
+     *  Setting the selected grid's background color.
      *
      * @function
      */
@@ -69,21 +57,6 @@
         event.target.setAttribute('style', 'background-color: ' + color);
     }
 
-    /*=================
-     * Helpers
-     *=================*/
-
-    /// I like to break out separate tasks
-    /// into helper functions. Why?
-    /// 1. To make the code more readable and reusable.
-    /// 2. Separate out separate tasks for Single Responsibility.
-
-
-    /**
-     * @description Clear the grid canvas' HTML.
-     *
-     * @function
-     */
     function clearCanvas() {
         elements.gridCanvas.innerHTML = '';
     }
